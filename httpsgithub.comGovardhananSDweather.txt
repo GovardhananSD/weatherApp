@@ -1,0 +1,188 @@
+https://github.com/GovardhananSD/weatherApp
+https://reedarchitects.in
+https://www.zoho.com/careers/jobdetails/?job_id=2803000614929615
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+npm init -y 
+npm install express
+
+Here's a simple webpage using HTML, CSS, and JavaScript. It displays a button that changes the background color when clicked.
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Changer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+            transition: background-color 0.5s;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            background-color: #007BFF;
+            color: white;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Click the button to change background color</h1>
+    <button onclick="changeColor()">Change Color</button>
+    
+    <script>
+        function changeColor() {
+            const colors = ["#FF5733", "#33FF57", "#3357FF", "#F3FF33", "#FF33A1"];
+            const randomColor = colors[Math.floor(Math.random() * colors.length)];
+            document.body.style.backgroundColor = randomColor;
+        }
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+J Query
+The easiest way to use jQuery is by adding this <script> tag inside the <head> or before the closing </body> tag:
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Color Changer</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+            transition: background-color 0.5s;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            background-color: #28a745;
+            color: white;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <h1>Click the button to change background color</h1>
+    <button id="changeColor">Change Color</button>
+    
+    <script>
+        $(document).ready(function(){
+            $("#changeColor").click(function(){
+                const colors = ["#FF5733", "#33FF57", "#3357FF", "#F3FF33", "#FF33A1"];
+                const randomColor = colors[Math.floor(Math.random() * colors.length)];
+                $("body").css("background-color", randomColor);
+            });
+        });
+    </script>
+</body>
+</html>
+
+ 
+NODE JS
+Here's a simple Node.js application using the Express.js framework to create a basic web server that serves an HTML page.
+1. Install Node.js & Express
+Make sure you have Node.js installed. Then, initialize a project and install Express:
+npm init -y npm 
+install express
+
+2. Create server.js (Node.js + Express Server)
+const express = require("express");
+const app = express();
+const path = require("path");
+
+const PORT = 3000;
+
+// Serve static files (CSS, JS)
+app.use(express.static("public"));
+
+// Route to serve the HTML page
+app.get("/", (req, res) => {
+    res.sendFile(path.join(__dirname, "index.html"));
+});
+
+// Start the server
+app.listen(PORT, () => {
+    console.log(`Server running at http://localhost:${PORT}`);
+});
+ 
+3. Create index.html (Frontend Page)
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Node.js Web Page</title>
+    <script src="script.js" defer></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to My Node.js App</h1>
+    <button id="changeText">Click Me</button>
+    <p id="message">Hello, Node.js!</p>
+</body>
+</html>
+
+4. Create public/script.js (Frontend JavaScript)
+Inside a new public folder, create script.js to handle button interactions.
+document.getElementById("changeText").addEventListener("click", function() { document.getElementById("message").textContent = "You clicked the button!"; document.body.style.backgroundColor = "lightblue"; });
+
+5. Run the Server
+node server.js
+http://localhost:3000
+
+React JS
+https://codesandbox.io/p/sandbox/react-components-3brog?file=%2Fsrc%2Findex.js%3A8%2C1-11%2C3
+
+https://codesandbox.io/p/devbox/react-components-practice-completed-forked-jjgjgm?file=%2Fsrc%2Fcomponents%2FApp.jsx%3A13%2C1&workspaceId=ws_NSikm6tEMiXXSf2MRTG2ix
+
+
+ 
+
+
+
